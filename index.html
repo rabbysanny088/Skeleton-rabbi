@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skeleton </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="card">
+    <div class="card-image skeleton">
+        <img src="./img/img-1.jpg" alt="">
+    </div>
+    <a href="#" class="card-title skeleton">Card title here</a>
+    <a href="# " class="card-description skeleton">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus maiores esse recusandae quibusdam aspernatur porro a corrupti, eaque ipsum expedita impedit enim nulla.</a>
+   </div>
+   
+
+   <script>
+    const allSkeleton = document.querySelectorAll('.skeleton');
+    // window.addEventListener('load', function () {
+    //     allSkeleton.forEach(itme => {
+    //         itme.classList.remove('skeleton');
+    //     })
+    // })
+    setTimeout(() => {
+        allSkeleton.forEach(itme => {
+            console.log(allSkeleton)
+            itme.classList.remove('skeleton');
+        })
+    }, 2000);
+   </script>
+</body>
+</html>
